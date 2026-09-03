@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="IdeaBasket Entertainment — Kannada comedy, entertainment, stories and creative videos.">
+<meta name="theme-color" content="#09090b">
+<title>IdeaBasket Entertainment | Entertainment. Stories. Ideas.</title>
+<style>
+:root{--bg:#08090c;--card:#11131a;--text:#f6f7fb;--muted:#a5a8b3;--line:#252833;--accent:#ffcf33;--accent2:#ff6b35;--max:1180px}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(circle at 80% 0%,#22210f 0,#08090c 35%),var(--bg);color:var(--text);font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;line-height:1.5}
+a{color:inherit;text-decoration:none}.wrap{max-width:var(--max);margin:auto;padding:0 22px}
+nav{height:76px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid #ffffff0b;position:sticky;top:0;background:#08090ce8;backdrop-filter:blur(18px);z-index:10}
+.logo{display:flex;align-items:center;gap:11px;font-weight:900;letter-spacing:-.5px}.mark{width:39px;height:39px;border-radius:12px;background:linear-gradient(135deg,var(--accent),var(--accent2));display:grid;place-items:center;color:#111;font-weight:1000}
+.links{display:flex;gap:26px;color:#c9cad0;font-size:14px}.links a:hover{color:#fff}.menu{display:none;background:none;border:0;color:white;font-size:24px}
+.hero{min-height:650px;display:grid;grid-template-columns:1.1fr .9fr;align-items:center;gap:50px;padding:80px 0}
+.eyebrow{color:var(--accent);font-size:13px;font-weight:800;letter-spacing:2px;text-transform:uppercase}.hero h1{font-size:clamp(48px,7vw,88px);line-height:.94;letter-spacing:-4px;margin:17px 0 25px}.hero h1 span{background:linear-gradient(90deg,#fff,var(--accent));-webkit-background-clip:text;background-clip:text;color:transparent}.hero p{font-size:19px;color:var(--muted);max-width:650px}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}.btn{padding:13px 19px;border-radius:12px;border:1px solid var(--line);font-weight:800;font-size:14px;display:inline-flex;align-items:center;gap:9px}.primary{background:var(--accent);color:#111;border-color:var(--accent)}.btn:hover{transform:translateY(-2px)}
+.visual{position:relative;min-height:430px;border:1px solid #ffffff12;border-radius:30px;background:linear-gradient(145deg,#191b24,#0c0d11);overflow:hidden;box-shadow:0 30px 100px #0008}.visual:before{content:"";position:absolute;width:290px;height:290px;border-radius:50%;background:var(--accent);filter:blur(75px);opacity:.18;right:-50px;top:-30px}.poster{position:absolute;inset:35px;border-radius:22px;background:linear-gradient(145deg,#292b34,#12141a);border:1px solid #ffffff12;display:flex;flex-direction:column;justify-content:flex-end;padding:30px;overflow:hidden}.poster:after{content:"";position:absolute;inset:0;background:linear-gradient(transparent 35%,#000d)}.poster>*{position:relative;z-index:1}.poster .big{font-size:62px;font-weight:1000;line-height:.9;letter-spacing:-4px}.poster small{color:var(--accent);font-weight:900;letter-spacing:2px;margin-bottom:12px}
+section{padding:82px 0;border-top:1px solid #ffffff0a}.section-head{display:flex;justify-content:space-between;gap:20px;align-items:end;margin-bottom:30px}.section-head h2{font-size:36px;margin:5px 0;letter-spacing:-1.5px}.section-head p{color:var(--muted);margin:0}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{background:var(--card);border:1px solid var(--line);border-radius:20px;overflow:hidden;transition:.25s}.card:hover{transform:translateY(-5px);border-color:#ffffff2b}.thumb{aspect-ratio:16/10;background:linear-gradient(135deg,#272a34,#14151b);display:grid;place-items:center;position:relative}.thumb .play{width:52px;height:52px;border-radius:50%;display:grid;place-items:center;background:#ffffffee;color:#111;font-size:19px;padding-left:3px}.tag{position:absolute;top:13px;left:13px;background:#000b;border:1px solid #ffffff18;padding:5px 8px;border-radius:8px;font-size:11px;font-weight:800}.cardbody{padding:18px}.card h3{margin:0 0 7px;font-size:18px}.card p{margin:0;color:var(--muted);font-size:14px}.social{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.social a{padding:27px;border:1px solid var(--line);border-radius:20px;background:#0e1015;display:flex;justify-content:space-between;align-items:center}.social strong{font-size:19px}.social span{color:var(--muted);font-size:13px}.about{display:grid;grid-template-columns:1fr 1fr;gap:50px}.about h2{font-size:42px;line-height:1;margin:0 0 18px}.about p{color:var(--muted);font-size:16px}.pillbox{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}.pill{border:1px solid var(--line);padding:9px 13px;border-radius:99px;color:#d7d8de;font-size:13px}
+.cta{background:linear-gradient(135deg,#1b1c21,#101116);border:1px solid var(--line);border-radius:28px;padding:48px;display:flex;justify-content:space-between;align-items:center;gap:25px}.cta h2{font-size:36px;margin:0 0 8px}.cta p{color:var(--muted);margin:0}
+footer{padding:45px 0;color:#777b87;font-size:13px;border-top:1px solid #ffffff0a}.foot{display:flex;justify-content:space-between;gap:20px}.mini-links{display:flex;gap:18px}
+@media(max-width:800px){.links{display:none}.menu{display:block}.hero{grid-template-columns:1fr;padding:60px 0}.visual{min-height:370px}.grid{grid-template-columns:1fr}.social{grid-template-columns:1fr}.about{grid-template-columns:1fr}.cta{padding:30px;display:block}.cta .btn{margin-top:20px}.hero h1{letter-spacing:-3px}}
+</style>
+</head>
+<body>
+<nav><div class="wrap" style="display:flex;width:100%;align-items:center;justify-content:space-between">
+<a class="logo" href="#"><span class="mark">IB</span><span>IdeaBasket<br><small style="font-weight:600;color:#8f929d">ENTERTAINMENT</small></span></a>
+<div class="links"><a href="#videos">Videos</a><a href="#about">About</a><a href="#social">Social</a><a href="#contact">Contact</a></div>
+<button class="menu" onclick="document.querySelector('.links').style.display=document.querySelector('.links').style.display==='flex'?'none':'flex'">☰</button>
+</div></nav>
+
+<main>
+<section class="hero wrap" style="border:0">
+<div><div class="eyebrow">IdeaBasket Entertainment</div>
+<h1>Ideas that make<br><span>you smile.</span></h1>
+<p>Kannada entertainment, comedy, stories and creative videos — made to entertain, connect and keep you coming back for more.</p>
+<div class="actions"><a class="btn primary" href="https://www.youtube.com/@travelwithadi06" target="_blank">▶ Watch on YouTube</a><a class="btn" href="#social">Follow IdeaBasket</a></div></div>
+<div class="visual"><div class="poster"><small>ORIGINAL • KANNADA • ENTERTAINMENT</small><div class="big">IDEA<br>BASKET</div><p style="color:#ddd;margin:16px 0 0">Comedy • Stories • Creative Content</p></div></div>
+</section>
+
+<section id="videos"><div class="wrap"><div class="section-head"><div><div class="eyebrow">Watch</div><h2>Featured content</h2></div><p>Replace these cards with your latest uploads.</p></div>
+<div class="grid">
+<a class="card" href="https://www.youtube.com/@travelwithadi06" target="_blank"><div class="thumb"><span class="tag">YOUTUBE</span><span class="play">▶</span></div><div class="cardbody"><h3>Latest IdeaBasket Video</h3><p>Comedy, entertainment & creative Kannada content.</p></div></a>
+<a class="card" href="https://www.youtube.com/@travelwithadi06" target="_blank"><div class="thumb"><span class="tag">SHORTS</span><span class="play">▶</span></div><div class="cardbody"><h3>Kannada Comedy Shorts</h3><p>Quick laughs, characters and everyday situations.</p></div></a>
+<a class="card" href="https://www.youtube.com/@travelwithadi06" target="_blank"><div class="thumb"><span class="tag">ORIGINALS</span><span class="play">▶</span></div><div class="cardbody"><h3>Creative Originals</h3><p>Fresh ideas turned into entertaining stories.</p></div></a>
+</div></div></section>
+
+<section id="about"><div class="wrap about"><div><div class="eyebrow">Who we are</div><h2>More than content.<br>A basket of ideas.</h2></div><div><p><b style="color:#fff">IdeaBasket Entertainment</b> is a digital entertainment brand built around one simple goal: create content people genuinely enjoy watching and sharing.</p><p>From Kannada comedy and character-driven videos to creative concepts and original entertainment, this is where different ideas come together in one basket.</p><div class="pillbox"><span class="pill">Kannada Comedy</span><span class="pill">Entertainment</span><span class="pill">Shorts</span><span class="pill">Creative Videos</span><span class="pill">Original Content</span></div></div></div></section>
+
+<section id="social"><div class="wrap"><div class="section-head"><div><div class="eyebrow">Stay connected</div><h2>Find us online</h2></div></div>
+<div class="social">
+<a href="https://www.youtube.com/@travelwithadi06" target="_blank"><div><strong>YouTube</strong><br><span>Watch videos & Shorts</span></div><b>↗</b></a>
+<a href="#" onclick="alert('Add your Instagram profile URL here in index.html.');return false"><div><strong>Instagram</strong><br><span>Reels, posts & updates</span></div><b>↗</b></a>
+<a href="#" onclick="alert('Add your Facebook page URL here in index.html.');return false"><div><strong>Facebook</strong><br><span>Follow the page</span></div><b>↗</b></a>
+</div></div></section>
+
+<section id="contact"><div class="wrap"><div class="cta"><div><h2>Let’s create something.</h2><p>For collaborations, promotions and business enquiries, get in touch.</p></div><a class="btn primary" href="mailto:YOUR-EMAIL@example.com">Contact IdeaBasket</a></div></div></section>
+</main>
+
+<footer><div class="wrap foot"><div>© 2026 IdeaBasket Entertainment. All rights reserved.</div><div class="mini-links"><a href="#about">About</a><a href="#social">Social</a><a href="#contact">Contact</a></div></div></footer>
+</body>
+</html>
